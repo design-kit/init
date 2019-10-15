@@ -1,0 +1,49 @@
+{
+  "name": "@design-kit/init",
+  "version": "0.0.1",
+  "description": "Set up a zero-config design system by running one command.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/design-kit/init.git"
+  },
+  "keywords": [
+    "design-system"
+  ],
+  "author": "Kristof Dombi <dombi.kristof@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/design-kit/init/issues"
+  },
+  "homepage": "https://github.com/design-kit/init#readme",
+  "dependencies": {
+    "commander": "^3.0.2",
+    "inquirer": "^7.0.0",
+    "jsonfile": "^5.0.0",
+    "kleur": "^3.0.3",
+    "ora": "^4.0.2",
+    "prompts": "^2.2.1",
+    "shelljs": "^0.8.3"
+  },
+  "devDependencies": {
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "/src/*.js": [
+      "eslint -c ./.eslintrc.js --fix ./src/*",
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
