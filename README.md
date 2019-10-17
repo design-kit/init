@@ -1,6 +1,6 @@
 # @design-kit/init
 
-Set up an accessibility-first design system environment by **running only one command**.
+Set up an accessibility first design system environment by **running only one command**.
 
 ---
 
@@ -22,7 +22,7 @@ npm run dev
 
 At `localhost:5000` there'll be a [Storybook](https://storybook.js.org/) running with a predefined list of components to get you started.
 
-[More about the usage below](#usage) ⬇️
+[More about the usage below](#-usage) ⬇️
 
 ## 🍭 Features
 
@@ -38,7 +38,7 @@ At `localhost:5000` there'll be a [Storybook](https://storybook.js.org/) running
 
 ## 🏗 Component list
 
-As mentioned, `@design-kit` provides you with a basic list of accessible components
+As mentioned, `@design-kit` provides you with a basic list of accessible components:
 
 * Button
 * Input
